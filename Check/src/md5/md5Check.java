@@ -11,6 +11,7 @@ public class md5Check {
 		MessageDigest md5=MessageDigest.getInstance("MD5");
 		BASE64Encoder base = new BASE64Encoder();
 		String newstrs = base.encode(md5.digest(str.getBytes("utf-8")));
+		
 		return newstrs;
 	}
 	
